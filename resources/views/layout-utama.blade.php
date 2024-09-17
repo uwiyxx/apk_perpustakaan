@@ -99,7 +99,6 @@
                 <use xlink:href="" />
             </svg>
             <a class="navbar-brand" href="#">
-                {{-- <img src="/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="30" height="24" class="d-inline-block align-text-top"> --}}
                 <strong a class="navbar-brand fw-bold text-white">Sistem Informasi Perpustakaan</strong>
             </a>
         </div>
@@ -131,7 +130,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="nav-link text-dark">
+                    <a href="/master-data" class="nav-link text-dark">
                         <svg class="bi me-2" width="16" height="16">
                             <use xlink:href="#speedometer2" />
                         </svg>

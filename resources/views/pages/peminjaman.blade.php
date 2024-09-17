@@ -3,7 +3,7 @@
 @section('konten-utama')
 <h3 class="text-center">Data Peminjaman </h3>
 <div class="container">
-    <button class="tambah-data-btn" style="background-color:#F0A8D0;" onclick="window.location.href='add_data.php'">+ Tambah Data</button>
+    <a href="/isi-data-buku" class="tambah-data-btn" style="background-color:#F0A8D0;" onclick="window.location.href='add_data.php'">+ Tambah Data</a>
 </div>
     <div class="d-flex container mt-2">
         <table class="table" style="border-collapse: collapse;">
