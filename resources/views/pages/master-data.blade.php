@@ -32,8 +32,8 @@
                     <td>{{$item->judul}}</td>
                     <td>{{$item->penerbit}}</td>
                     <td>{{$item->tahun_terbit}}</td>
-                    <td><a href="/tambah-data" class="btn text-white" style="background-color: #059C41">Edit</a>
-                        <a href="" class="btn btn-danger">Delete</a></td>
+                    <td><a href="/edit/{{$item->kode_buku}}" class="btn text-white" style="background-color: #059C41">Edit</a>
+                        <a href="/delete/{{$item->kode_buku}}" class="btn btn-danger">Delete</a></td>
                 </tr>
                 @endforeach
             </tbody>

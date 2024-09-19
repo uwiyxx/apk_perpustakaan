@@ -5,7 +5,7 @@ use App\Models\buku;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function(){
-    return view('layout-utama');
+    return view('welcome');
 });
 Route::get('/layout-pengunjung', function(){
     return view('layout-pengunjung');
@@ -41,3 +41,6 @@ Route::get('/non-fiksi',function(){
 });
 Route::get('/tambah-data',[BukuController::class, 'tambah']);
 Route::post('/tambah-data',[BukuController::class, 'simpan']);
+Route::get('/edit/{kode_buku}',[BukuController::class, 'edit']);
+Route::post('/edit/{kode_buku}',[BukuController::class, 'update']);
+Route::get('/delete/{kode_buku}',[BukuController::class, 'delete']);
