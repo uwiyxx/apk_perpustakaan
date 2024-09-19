@@ -1,7 +1,7 @@
 @extends('layout-utama')
 
 @section('konten-utama')
-    <h3 class="text-center">Tambah Data</h3>
+    <h3 class="text-center">Edit Buku</h3>
     <form method="post">
         @csrf
         <div class="mb-3">

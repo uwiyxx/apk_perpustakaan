@@ -5,7 +5,7 @@ use App\Models\buku;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function(){
-    return view('welcome');
+    return view('layout-utama');
 });
 Route::get('/layout-pengunjung', function(){
     return view('layout-pengunjung');
@@ -15,9 +15,6 @@ Route::get('/dashboard',function(){
 });
 Route::get('/peminjaman',function(){
     return view('pages/peminjaman');
-});
-Route::get('/isi-data-buku',function(){
-    return view('pages/isi-data-buku');
 });
 Route::get('/data-siswa',function(){
     return view('pages/data-siswa');

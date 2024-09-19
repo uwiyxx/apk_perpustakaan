@@ -94,7 +94,7 @@
                 <span class="input-group-text" id="basic-addon2"><i class="bi bi-lock"></i></span>
                 <input type="password" class="form-control" id="password" placeholder="Password">
             </div>
-
+            
             <button type="submit" class="btn btn-masuk w-100">Masuk</button>
         </form>
     </div>

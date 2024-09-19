@@ -19,6 +19,7 @@
                     <th scope="col">NO</th>
                     <th scope="col">kode buku</th>
                     <th scope="col">judul</th>
+                    <th scope="col">penulis</th>
                     <th scope="col">penerbit</th>
                     <th scope="col">tahun terbit</th>
                     <th scope="col">kelola</th>
@@ -30,6 +31,7 @@
                     <th scope="row">1</th>
                     <td>{{$item->kode_buku}}</td>
                     <td>{{$item->judul}}</td>
+                    <td>{{$item->penulis}}</td>
                     <td>{{$item->penerbit}}</td>
                     <td>{{$item->tahun_terbit}}</td>
                     <td><a href="/edit/{{$item->kode_buku}}" class="btn text-white" style="background-color: #059C41">Edit</a>

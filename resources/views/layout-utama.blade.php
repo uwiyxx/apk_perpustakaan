@@ -122,21 +122,35 @@
             <hr>
             <ul class="nav nav-pills flex-column mb-auto">
                 <li class="nav-item">
-                    <a href="#" class="nav-link active" aria-current="page">
+                    <a href="/dashboard" class="nav-link active" aria-current="page">
                         <svg class="bi me-2" width="16" height="16">
                             <use xlink:href="#grid" />
                         </svg>
                         Dashboard
                     </a>
                 </li>
-                <li>
+                
+                <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="true">
+                    <svg class="bi me-2" width="16" height="16">
+                        <use xlink:href="#speedometer2" />
+                    </svg>
+                    Master Data 
+                  </button>
+                  <div class="collapse show" id="home-collapse">
+                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small" style="text-decoration-color: black">
+                      <li><a href="/master-data" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Data Buku</a></li>
+                      <li><a href="/data-siswa" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Data Siswa</a></li>
+                    </ul>
+                  </div>
+                </li>
+                {{-- <li>
                     <a href="/master-data" class="nav-link text-dark">
                         <svg class="bi me-2" width="16" height="16">
                             <use xlink:href="#speedometer2" />
                         </svg>
                         Master Data
                     </a>
-                </li>
+                </li> --}}
                 <li>
                     <a href="#" class="nav-link text-dark">
                         <svg class="bi me-2" width="16" height="16">
