@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\BukuController;
+use App\Http\Controllers\SiswaController;
 use App\Models\buku;
 use Illuminate\Support\Facades\Route;
 
@@ -16,9 +17,7 @@ Route::get('/dashboard',function(){
 Route::get('/peminjaman',function(){
     return view('pages/peminjaman');
 });
-Route::get('/data-siswa',function(){
-    return view('pages/data-siswa');
-});
+Route::get('/data-siswa',[SiswaController::class,'utama']);
 Route::get('/login',function(){
     return view('pages/login');
 });
@@ -41,3 +40,10 @@ Route::post('/tambah-data',[BukuController::class, 'simpan']);
 Route::get('/edit/{kode_buku}',[BukuController::class, 'edit']);
 Route::post('/edit/{kode_buku}',[BukuController::class, 'update']);
 Route::get('/delete/{kode_buku}',[BukuController::class, 'delete']);
+
+Route::get('/data-siswa',[SiswaController::class, 'utama']);
+Route::get('/tambah-siswa',[SiswaController::class, 'tambah']);
+Route::post('/tambah-siswa',[SiswaController::class, 'simpan']);
+Route::get('/edit/{nis}',[SiswaController::class, 'tampil']);
+Route::get('/edit/{nis}',[SiswaController::class, 'update']);
+Route::get('/hapus/{nis}',[SiswaController::class, 'delete']); 

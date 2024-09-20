@@ -7,7 +7,7 @@
     <ul class="nav nav-pills d-flex mb-auto nav text-center text-white">
         <li class="">
             <div class="container">
-                <a href="/tambah-data" class="tambah-data-btn mt-2" style="background-color:#F0A8D0;" onclick="window.location.href='add_data.php'">+ Tambah Data</a>
+                <a href="/tambah-siswa" class="tambah-data-btn mt-2" style="background-color:#F0A8D0;" onclick="window.location.href='add_data.php'">+ Tambah Data</a>
             </div>
         </li>
     </ul>
@@ -21,20 +21,19 @@
                     <th scope="col">nama</th>
                     <th scope="col">alamat</th>
                     <th scope="col">no telp</th>
-                    <th scope="col">kode kelas</th>
+                    <th scope="col">kelola</th>
                 </tr>
             </thead>
             <tbody>
-                @foreach ( $buku as $item)
+                @foreach ( $data_siswa as $item)
                 <tr>
                     <th scope="row">1</th>
-                    <td>{{$item->NISN}}</td>
+                    <td>{{$item->nisn}}</td>
                     <td>{{$item->nama}}</td>
                     <td>{{$item->alamat}}</td>
                     <td>{{$item->no_telp}}</td>
-                    <td>{{$item->kode_kelas}}</td>
-                    <td><a href="/edit/{{$item->kode_buku}}" class="btn text-white" style="background-color: #059C41">Edit</a>
-                        <a href="/delete/{{$item->kode_buku}}" class="btn btn-danger">Delete</a></td>
+                    <td><a href="/edit/{{$item->nis}}" class="btn text-white" style="background-color: #059C41">Edit</a>
+                        <a href="/delete/{{$item->nis}}" class="btn btn-danger">Delete</a></td>
                 </tr>
                 @endforeach
             </tbody>
