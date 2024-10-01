@@ -3,7 +3,7 @@
 @section('konten-utama')
 <h3 class="text-center">Isi Data Buku</h3>
 <button class="tambah-data-btn mt-2" style="background-color:#F0A8D0;" onclick="window.location.href='add_data.php'">+ Tambah Buku</button>
-<form>
+<form method="post">
     <div class="mb-3">
       <label for="exampleInputEmail1" class="form-label">Id Buku</label>
       <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">

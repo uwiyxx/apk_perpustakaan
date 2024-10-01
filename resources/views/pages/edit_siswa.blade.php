@@ -3,19 +3,19 @@
 @section('konten-utama')
     <h3 class="text-center">Edit Siswa</h3>
     @if ($errors->any())
-    <div class="alert alert-danger">
-        <ul>
-            @foreach ($errors->all() as $error)
-                <li>{{ $error }}</li>
-            @endforeach
-        </ul>
-    </div>
-@endif
+        <div class="alert alert-danger">
+            <ul>
+                @foreach ($errors->all() as $error)
+                    <li>{{ $error }}</li>
+                @endforeach
+            </ul>
+        </div>
+    @endif
     <form method="post" action="">
         @csrf
         <div class="mb-3">
             <label class="form-label">NISN</label>
-            <input type="text" class="form-control" name="nisn" value="{{ $siswa->nisn }}">
+            <input type="text" class="form-control" name="nis" value="{{ $siswa->nis }}">
         </div>
         <div class="mb-3">
             <label class="form-label">Nama</label>
@@ -23,7 +23,7 @@
         </div>
         <div class="mb-3">
             <label class="form-label">Alamat</label>
-            <input type="text" class="form-control"  name="alamat" value="{{ $siswa->alamat }}">
+            <input type="text" class="form-control" name="alamat" value="{{ $siswa->alamat }}">
         </div>
         <div class="mb-3">
             <label class="form-label">No Telp</label>
@@ -31,7 +31,7 @@
         </div>
         <div class="mb-3">
             <label class="form-label">Kode Kelas</label>
-            <input type="number" class="form-control" name="kode_kelas" value="{{ $siswa->kode_kelas }}">
+            <input type="text" class="form-control" name="kode_kelas" value="{{ $siswa->kode_kelas }}">
         </div>
         <th style="border: 1px solid black;">
             <button type="submit" class="btn btn-primary">Simpan</button>

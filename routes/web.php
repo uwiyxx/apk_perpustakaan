@@ -37,13 +37,13 @@ Route::get('/non-fiksi',function(){
 });
 Route::get('/tambah-data',[BukuController::class, 'tambah']);
 Route::post('/tambah-data',[BukuController::class, 'simpan']);
-Route::get('/edit/{kode_buku}',[BukuController::class, 'edit']);
-Route::post('/edit/{kode_buku}',[BukuController::class, 'update']);
+Route::get('/edit/Buku/{kode_buku}',[BukuController::class, 'edit']);
+Route::post('/edit/Buku/{kode_buku}',[BukuController::class, 'update']);
 Route::get('/delete/{kode_buku}',[BukuController::class, 'delete']);
 
 Route::get('/data-siswa',[SiswaController::class, 'utama']);
 Route::get('/tambah-siswa',[SiswaController::class, 'tambah']);
 Route::post('/tambah-siswa',[SiswaController::class, 'simpan']);
-Route::get('/edit/{nis}',[SiswaController::class, 'tampil']);
-Route::get('/edit/{nis}',[SiswaController::class, 'update']);
-Route::get('/hapus/{nis}',[SiswaController::class, 'delete']); 
+Route::get('/edit/Siswa/{nis}',[SiswaController::class, 'tampil']);
+Route::Post('/edit/Siswa/{nis}',[SiswaController::class, 'update']);
+Route::get('/delete/Siswa/{nis}',[SiswaController::class, 'delete']); 

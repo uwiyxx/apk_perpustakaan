@@ -32,7 +32,7 @@
         </div>
         <div class="mb-3">
             <label class="form-label">Kode Kelas</label>
-            <input type="number" class="form-control" id="kode_kelas" name="kode_kelas">
+            <input type="text" class="form-control" id="kode_kelas" name="kode_kelas">
         </div>
         <th style="border: 1px solid black;">
             <button type="submit" class="btn btn-primary">Simpan</button>

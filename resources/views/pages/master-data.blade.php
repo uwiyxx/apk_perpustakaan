@@ -17,24 +17,24 @@
             <thead>
                 <tr>
                     <th scope="col">NO</th>
-                    <th scope="col">kode buku</th>
-                    <th scope="col">judul</th>
-                    <th scope="col">penulis</th>
-                    <th scope="col">penerbit</th>
-                    <th scope="col">tahun terbit</th>
-                    <th scope="col">kelola</th>
+                    <th scope="col">Kode Buku</th>
+                    <th scope="col">Judul</th>
+                    <th scope="col">Penulis</th>
+                    <th scope="col">Penerbit</th>
+                    <th scope="col">Tahun Terbit</th>
+                    <th scope="col">Kelola</th>
                 </tr>
             </thead>
             <tbody>
                 @foreach ( $buku as $item)
                 <tr>
-                    <th scope="row">1</th>
+                    <th scope="row">{{ $loop->iteration }}</th>
                     <td>{{$item->kode_buku}}</td>
                     <td>{{$item->judul}}</td>
                     <td>{{$item->penulis}}</td>
                     <td>{{$item->penerbit}}</td>
                     <td>{{$item->tahun_terbit}}</td>
-                    <td><a href="/edit/{{$item->kode_buku}}" class="btn text-white" style="background-color: #059C41">Edit</a>
+                    <td><a href="/edit/Buku/{{$item->kode_buku}}" class="btn text-white" style="background-color: #059C41">Edit</a>
                         <a href="/delete/{{$item->kode_buku}}" class="btn btn-danger">Delete</a></td>
                 </tr>
                 @endforeach

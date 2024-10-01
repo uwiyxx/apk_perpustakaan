@@ -36,7 +36,7 @@
         }
 
         .btn-masuk {
-            background-color: #e74c3c; /* Warna tombol merah sesuai gambar */
+            background-color: #e74c3c; 
             color: white;
         }
 
@@ -44,7 +44,7 @@
             position: absolute;
             top: 0;
             width: 100%;
-            background-color: #e91e63; /* Warna pink pada navbar */
+            background-color: #e91e63;
         }
 
         .navbar-brand img {
